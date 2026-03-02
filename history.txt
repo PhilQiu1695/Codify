@@ -1,0 +1,52 @@
+  701  echo "Hello Bash"
+  702  pwd
+  703  cd ../../cs61d
+  704  mkdir assignments
+  705  cd assignments
+  706  mkdir bash-assignment
+  707  cd bash-assignment
+  708  touch README.md
+  709  touch meaning-of-life.txt
+  710  ls
+  711  mv meaning-of-life.txt history.txt
+  712  code .
+  713  git init
+  714  git status
+  715  git add .
+  716  git status
+  717  git commit -m "Initial commit"
+  718  git checkout -b new-feature
+  719  git branch
+  720  touch feature.txt
+  721  add .
+  722  git add .
+  723  git commit -m "feature commit"
+  724  git checkout main
+  725  ls
+  726  git merge new-feature -m "Merge main and new-feature"
+  727  git branch -d new_feature
+  728  git branch -d new-feature
+  729  git remote add origin git@github.com:PhilQiu1695/Codify.git\ngit branch -M main\ngit push -u origin main
+  730  git checkout -b conflict1
+  731  git add .
+  732  git commit -m "conflict1 modified"
+  733  git push origin conflict1
+  734  git checkout -b main
+  735  git checkout main
+  736  git checkout -b conflict2
+  737  git add .
+  738  git commit -m "conflict2 modified"
+  739  git push origin conflict2
+  740  git branch
+  741  git checkout main
+  742  touch .gitignore
+  743  ls
+  744  code .gitignore
+  745  git add .
+  746  git commit -m "gitignore added"
+  747  touch no-commit.txt
+  748  git push origin main
+  749  git pull
+  750  git push origin main
+  751  history | tail -n 200 >> history.txt
+  752  history | tail -n 2000 >> history.txt
